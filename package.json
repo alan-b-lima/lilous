@@ -2,7 +2,7 @@
     "name": "lilous",
     "displayName": "Lilous",
     "description": "Lilous",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "publisher": "alan-b-lima",
     "engines": {
         "vscode": "^1.56.0"

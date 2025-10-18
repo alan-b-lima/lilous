@@ -44,22 +44,19 @@
         "list.inactiveSelectionBackground": "#454a5e",
         "panel.background": "#282c3d",
         "panel.border": "#00000000",
-        "peekView.border": "#705697",
         "peekViewEditor.background": "#2d3143",
         "peekViewEditor.matchHighlightBackground": "#3d4357",
         "peekViewResult.background": "#2d3143",
         "peekViewResult.matchHighlightBackground": "#2d3143",
         "peekViewTitle.background": "#705697",
-        "pickerGroup.border": "#9273c2",
         "pickerGroup.foreground": "#a498cF",
         "progressBar.background": "#a498cF",
         "quickInput.background": "#2d3143",
         "quickInput.foreground": "#dac8ff",
-        "quickInputList.focusBackground": "#9273c2",
+        "quickInputList.focusBackground": "#917be0",
         "selection.background": "#2d3143",
         "sideBar.background": "#33384d",
-        "sideBarSectionHeader.background": "#9273c2",
-        "sideBarSectionHeader.border": "#8e6dbe",
+        "sideBarSectionHeader.background": "#917be0",
         "sideBarSectionHeader.foreground": "#ffffff",
         "sideBarTitle.foreground": "#bbbbbb",
         "statusBar.background": "#33384d",
@@ -68,7 +65,6 @@
         "statusBarItem.remoteBackground": "#33384d",
         "statusBarItem.remoteForeground": "#ffffff",
         "tab.inactiveBackground": "#4e5366",
-        "tab.lastPinnedBorder": "#a498cF",
         "textLink.activeForeground": "#dac8ff",
         "textLink.foreground": "#a591c4",
         "titleBar.activeBackground": "#3d435f",
@@ -130,7 +126,9 @@
             "scope": [
                 "keyword",
                 "storage",
-                "keyword.operator.new"
+                "keyword.operator.new",
+                "keyword.operator.delete",
+                "keyword.operator.wordlike"
             ],
             "settings": {
                 "foreground": "#98ACE9"
@@ -216,7 +214,8 @@
         {
             "name": "Constant Variables",
             "scope": [
-                "variable.other.constant"
+                "variable.other.constant",
+                "variable.other.global"
             ],
             "settings": {
                 "fontStyle": "",
@@ -235,6 +234,7 @@
             "scope": [
                 "constant.numeric",
                 "constant.character",
+                "keyword.other.unit",
                 "constant"
             ],
             "settings": {
@@ -272,16 +272,30 @@
             }
         },
         {
+            "name": "C/C++: Preprocesser Directives",
             "scope": [
+                "keyword.control.directive",
+                "punctuation.definition.directive"
             ],
             "settings": {
-                "fontStyle": "italic",
-                "foreground": "#D16969"
+                "foreground": "#ac80a8",
+            }
+        },
+        {
+            "name": "C/C++: Preprocesser Macros",
+            "scope": [
+                "entity.name.function.preprocessor",
+                "entity.name.other.preprocessor.macro.predefined"
+            ],
+            "settings": {
+                "fontStyle": "bold",
+                "foreground": "#6f7fd1",
             }
         },
         {
             "name": "HTML: Tags",
             "scope": [
+                "text.html entity.name.tag",
                 "source.html entity.name.tag"
             ],
             "settings": {
@@ -291,6 +305,7 @@
         {
             "name": "HTML: Attributes",
             "scope": [
+                "text.html entity.other.attribute-name",
                 "source.html entity.other.attribute-name"
             ],
             "settings": {
@@ -304,6 +319,16 @@
             ],
             "settings": {
                 "foreground": "#6dabfc"
+            }
+        },
+        {
+            "name": "CSS: At Rules",
+            "scope": [
+                "source.css keyword.control.at-rule punctuation.definition",
+                "source.css keyword.control.at-rule"
+            ],
+            "settings": {
+                "foreground": "#98ACE9"
             }
         },
         {
