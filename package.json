@@ -1,0 +1,31 @@
+{
+    "name": "lilous",
+    "displayName": "Lilous",
+    "description": "Lilous",
+    "version": "0.0.3",
+    "publisher": "alan-b-lima",
+    "engines": {
+        "vscode": "^1.56.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "keywords": [
+        "theme",
+        "lilous",
+        "dark",
+        "purple"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/alan-b-lima/lilous.git"
+    },
+    "icon": "assets/icon.png",
+    "contributes": {
+        "themes": [{
+            "label": "Lilous",
+            "uiTheme": "vs-dark",
+            "path": "./themes/lilous-color-theme.json"
+        }]
+    }
+}
