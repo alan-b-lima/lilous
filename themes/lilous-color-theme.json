@@ -29,7 +29,7 @@
         "editorSuggestWidget.selectedBackground": "#454a5e",
         "errorForeground": "#f1897f",
         "focusBorder": "#705697",
-        "foreground": "#eee7e7",
+        "foreground": "#d9d3dd",
         "input.background": "#25282e",
         "input.foreground": "#a598b8",
         "input.placeholderForeground": "#a598b8",
@@ -38,7 +38,7 @@
         "inputValidation.infoBackground": "#f2fcff",
         "inputValidation.warningBackground": "#fffee2",
         "list.activeSelectionBackground": "#454a5e",
-        "list.activeSelectionForeground": "#FFFFFF",
+        "list.activeSelectionForeground": "#e7eeeb",
         "list.highlightForeground": "#f781ed",
         "list.hoverBackground": "#454a5e",
         "list.inactiveSelectionBackground": "#454a5e",
@@ -64,13 +64,16 @@
         "statusBar.noFolderBackground": "#33384d",
         "statusBarItem.remoteBackground": "#33384d",
         "statusBarItem.remoteForeground": "#ffffff",
-        "tab.inactiveBackground": "#4e5366",
+        "tab.border": "#00000000",
+        "tab.activeForeground": "#e7eeeb",
+        "tab.inactiveForeground": "#d9d3dd",
+        "tab.inactiveBackground": "#3d435f",
         "textLink.activeForeground": "#dac8ff",
         "textLink.foreground": "#a591c4",
         "titleBar.activeBackground": "#3d435f",
         "titleBar.inactiveBackground": "#3d435f",
         "welcomePage.tileBackground": "#2d3143",
-        "welcomePage.tileHoverBackground": "#454a5e"
+        "welcomePage.tileHoverBackground": "#454a5e",
     },
     "tokenColors": [
         {
@@ -128,7 +131,8 @@
                 "storage",
                 "keyword.operator.new",
                 "keyword.operator.delete",
-                "keyword.operator.wordlike"
+                "keyword.operator.wordlike",
+                "keyword.operator.expression",
             ],
             "settings": {
                 "foreground": "#98ACE9"
