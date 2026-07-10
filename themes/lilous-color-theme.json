@@ -38,7 +38,7 @@
         "inputValidation.infoBackground": "#f2fcff",
         "inputValidation.warningBackground": "#fffee2",
         "list.activeSelectionBackground": "#454a5e",
-        "list.activeSelectionForeground": "#e7eeeb",
+        "list.activeSelectionForeground": "#d7dddb",
         "list.highlightForeground": "#f781ed",
         "list.hoverBackground": "#454a5e",
         "list.inactiveSelectionBackground": "#454a5e",
@@ -297,21 +297,15 @@
             }
         },
         {
-            "name": "HTML: Tags",
-            "scope": [
-                "text.html entity.name.tag",
-                "source.html entity.name.tag"
-            ],
+            "name": "Tags",
+            "scope": "entity.name.tag",
             "settings": {
                 "foreground": "#6dabfc"
             }
         },
         {
-            "name": "HTML: Attributes",
-            "scope": [
-                "text.html entity.other.attribute-name",
-                "source.html entity.other.attribute-name"
-            ],
+            "name": "Attributes",
+            "scope": "entity.other.attribute-name",
             "settings": {
                 "foreground": "#9CDCFE"
             }
@@ -333,6 +327,16 @@
             ],
             "settings": {
                 "foreground": "#98ACE9"
+            }
+        },
+        {
+            "name": "CSS: At Rule Conditions",
+            "scope": [
+                "source.css support.type.property-name.media.css"
+            ],
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#c5a4c3"
             }
         },
         {
@@ -362,7 +366,7 @@
                 "source.css entity.other.attribute-name.pseudo-element"
             ],
             "settings": {
-                "foreground": "#afafaf"
+                "foreground": "#80e4dd"
             }
         },
         {
@@ -407,8 +411,9 @@
             }
         },
         {
-            "name": "CSS: Units",
+            "name": "CSS: Units and Constants",
             "scope": [
+                "source.css punctuation.definition.constant",
                 "source.css keyword.other.unit"
             ],
             "settings": {

@@ -2,7 +2,7 @@
     "name": "lilous",
     "displayName": "Lilous",
     "description": "Lilous Theme for VSCode",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "publisher": "alan-b-lima",
     "engines": {
         "vscode": "^1.56.0"
